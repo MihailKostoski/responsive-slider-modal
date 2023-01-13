@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/logo1.png" />
+
+      <button class="btn" onclick="mobileMenu()">MENU</button>
+
+      <ul class="ul1">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <h2 class="gallery">GALLERY</h2>
+
+    <div class="slider-wrapper">
+      <button onclick="leftBtn()" id="left-btn"><i class="arrow"></i></button>
+      <div class="slider-images">
+        <img src="img/img1.jpg" />
+        <img src="img/img2.jpg" />
+        <img src="img/img3.jpg" />
+        <img src="img/img4.jpg" />
+        <img src="img/img5.jpg" />
+        <img src="img/img6.jpg" />
+        <img src="img/img7.jpg" />
+
+        <img src="img/img8.jpg" />
+      </div>
+      <button onclick="rightBtn()" id="right-btn"><i class="arrow"></i></button>
+    </div>
+
+    <div class="portfolio-wrapper">
+      <div class="portfolio-categories">
+        <button data-category="all" onclick="portfolioSort(this)">All</button>
+        <button
+          data-category="restaurant"
+          onclick="portfolioSort(this)"
+          class="brown"
+        >
+          Restaurants
+        </button>
+        <button
+          data-category="hotels"
+          onclick="portfolioSort(this)"
+          class="blue"
+        >
+          Hotels
+        </button>
+        <button
+          data-category="corporation"
+          onclick="portfolioSort(this)"
+          class="green"
+        >
+          Corporation
+        </button>
+      </div>
+
+      <div class="portfolio-items">
+        <div class="portfolio-single-item blue" data-category="hotels">
+          <h3>Hotel 1</h3>
+        </div>
+
+        <div
+          class="portfolio-single-item blue"
+          data-category="hotels, restaurant"
+        >
+          <h3>Hotels & Restaurants</h3>
+        </div>
+
+        <div class="portfolio-single-item green" data-category="corporation">
+          <h3>Corporation</h3>
+        </div>
+
+        <div class="portfolio-single-item brown" data-category="restaurant">
+          <h3>Restaurant 1</h3>
+        </div>
+
+        <div class="portfolio-single-item blue" data-category="hotels">
+          <h3>Hotel 2</h3>
+        </div>
+
+        <div class="portfolio-single-item green" data-category="corporation">
+          <h3>Corporation 2</h3>
+        </div>
+        <div class="portfolio-single-item blue" data-category="hotels">
+          <h3>Hotel 3</h3>
+        </div>
+
+        <div class="portfolio-single-item brown" data-category="restourant">
+          <h3>Restaurant 2</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <button onclick="openModal()">Modal</button>
+    </div>
+
+    <div class="popup-modal">
+      <button id="closeModal" onclick="closeModal()">X</button>
+
+      <h4>Modal Title</h4>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </div>
+
+    <div class="overlay"></div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
